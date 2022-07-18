@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" href="">
+  <title>Signage Front 8 Simulated Junction</title>
+
+  <link rel="stylesheet" href="https://cdn.skypack.dev/bulma/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.skypack.dev/tachyons/css/tachyons.min.css"/>
+  <script src="https://kit.fontawesome.com/c610dda310.js" crossorigin="anonymous"></script>
+	
+  <script src="https://unpkg.com/neo4j-driver"></script>
+  
+  <link rel="stylesheet" href="../starting_helpers.css" />
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="debug-2">
+      <div class="h_align"></div>
+      <div class="v_align"></div>
+    </div>
+
+    <div class="casing-container">
+
+      <div class="casing-header">
+        <img class="lh-logo" />
+        <p class="sign-id">A.13</p>
+      </div>
+
+      <div class="shown-container">
+
+        <div class="leg L0">
+          <div class="sign-locator down">
+            <img class="lh-logo" />
+          </div>
+
+          <div class="leg-box up">
+            
+            <div class="leg-insts">
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+            </div>
+
+            <div class="leg-insts">
+              <div class="leg-inst three-part">
+                <div class="ident">
+                  <img src="ident_out_1.png" />
+                </div>
+      
+                <div class="picto">
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+      
+                <div class="text">
+                  <p>First Line</p>
+                  <p>Second Line</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leg-insts">
+              <div class="leg-inst three-part">
+                <div class="ident">
+                  <img src="ident_out_1.png" />
+                </div>
+      
+                <div class="picto">
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+      
+                <div class="text">
+                  <p>First Line</p>
+                  <p>Second Line</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="leg L5">
+          <div class="sign-locator down">
+            <img class="lh-logo" />
+          </div>
+
+          <div class="leg-box up">
+            
+            <div class="leg-insts">
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+              <div class="leg-inst single">
+                <div class="ident"><img src="ident_out_1.png" /></div>
+              </div>
+            </div>
+
+            <div class="leg-insts">
+              <div class="leg-inst three-part">
+                <div class="ident">
+                  <img src="ident_out_1.png" />
+                </div>
+      
+                <div class="picto">
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+      
+                <div class="text">
+                  <p>First Line</p>
+                  <p>Second Line</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leg-insts">
+              <div class="leg-inst three-part">
+                <div class="ident">
+                  <img src="ident_out_1.png" />
+                </div>
+      
+                <div class="picto">
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+      
+                <div class="text">
+                  <p>First Line</p>
+                  <p>Second Line</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="casing-footer">
+        <div class="inst">
+          <p>Scan to start navigating or show missing icon</p>
+        </div>
+  
+        <div class="qr-h">
+          <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https%3A%2F%2Fwww.dcode.fr&choe=UTF-8" />
+        </div>
+  
+        <div class="location">
+          <div class="left">
+            <p>2/F</p>
+          </div>
+  
+          <div class="right">
+            <p>Academic Building</p>
+            <p>Near Room 2335</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- <script src="index.js" type="module"></script> -->
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+:root {
+    --sign-color: #1b1c35;
+}
+
+html, body {
+    height: 100%; width: 100%; overflow: hidden;
+}
+
+#root {
+    position: relative;
+    height: 100%; width: 100%;
+}
+
+p, span, i {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.zl {transform: rotateZ(-90deg);}
+.zl2 {transform: rotateZ(-45deg);}
+.zr {transform: rotateZ(90deg);}
+.zr2 {transform: rotateZ(45deg);}
+.z2 {transform: rotateZ(180deg);}
+.mirror {transform: rotateY(180deg);}
+.mirror.zl {transform: rotateY(180deg) rotateZ(-90deg);}
+.mirror.zl2 {transform: rotateY(180deg) rotateZ(-45deg);}
+.mirror.zr {transform: rotateY(180deg) rotateZ(90deg);}
+.mirror.zr2 {transform: rotateY(180deg) rotateZ(45deg);}
+.mirror.z2 {transform: rotateY(180deg) rotateZ(180deg);}
+
+i.fa-solid {
+    font-size: 1em; -webkit-text-stroke: 0.08em var(--sign-color);
+}
+
+i.fa-solid.b {
+    -webkit-text-stroke: none;
+}
+
+img.lh-logo {
+    content: url("./lighthouse_logo.png");
+    width: auto; height: 90%; max-height: 90%;
+}
+
+.shown-container {
+    height: 100%; width: 100%;
+    overflow: hidden; position: relative;
+    display: flex; flex-direction: column;
+    background-color: var(--sign-color);
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2vmin;
+    color: white;
+}
+
+/* Casing */
+.casing-container {
+    height: 100%; width: 100%;
+    padding: 1% 0;
+    position: relative;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    background-color: var(--sign-color);
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2vmin;
+    color: white;
+}
+
+.casing-container::after {
+    content: "";
+    position: absolute;
+    border-bottom: 8vw solid white; border-right: 8vw solid transparent; /* Triangle */
+    height: 0; width: 0; bottom: 0; left: 0;
+}
+
+.casing-header {
+    position: relative;
+    max-height: 2em; width: 95%; flex: 1 1 auto;
+    display: flex; justify-content: flex-end; align-items: center;
+}
+
+.casing-header .lh-logo {
+    margin: 0 1em;
+}
+
+.casing-footer {
+    position: relative;
+    width: 95%; max-height: 5em; padding-left: 8vw; flex: 1 1 auto;
+    display: flex; justify-content: space-around; align-items: center;
+}
+
+.casing-footer div {
+    max-height: 100%; padding: 0.25em;
+}
+
+.casing-footer .inst {
+    flex: 2 1 auto; max-width: 30%;
+    text-align: right;
+}
+
+.casing-footer .qr-h {
+    display: block; flex: 1 2 auto;
+    height: 100%; max-height: 100%;
+}
+
+.casing-footer .qr-h img {
+    margin: auto; padding: -2%; display: block; height: 95%; width: auto;
+}
+
+.casing-footer .location {
+    display: flex; flex: 2 1 auto; align-items: center;
+    font-size: 2em;
+}
+
+.casing-footer .location .left {
+    flex: 1 2 auto;
+    text-align: right;
+}
+
+.casing-footer .location .right {
+    flex: 2 1 auto;
+}
+
+.casing-footer .location .right p:first-child {
+    font-size: 0.75em;
+}
+
+.casing-footer .location .right p:not(first-child) {
+    font-size: 0.5em;
+}
+
+.casing-container .shown-container {
+    zoom: 0.95; font-size: 95%;
+    transform: scale(0.95);
+    transform-origin: center center;
+    border: 5px solid black;
+    --ref-vmin: 0.95vmin;
+}
